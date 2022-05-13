@@ -24,7 +24,8 @@ ul,ol,li{
     color: #fff;
 }
 .wrap{
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 .container{
     width: 100%;

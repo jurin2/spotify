@@ -63,9 +63,11 @@ ul,ol,li{
     align-items: center;
     padding: 19.5px 15px;
 }
-.header .logo svg{
+.header .logo{
     width: 132px;
     height: 41.89px;
+}
+.header .logo svg{
     fill: #fff;
     cursor: pointer;
 }
@@ -495,7 +497,7 @@ ul,ol,li{
 @media (max-width:425px){
     /* header */
     .header .container{
-        padding: 6px 30px;
+        padding: 10px 30px;
     }
     .header .logo{
         width: 100px;
@@ -539,6 +541,9 @@ ul,ol,li{
     /* footer */
     .footer .row-top .com-conts{
         flex-direction: column;
+    }
+    .footer .row-top .com-conts ul{
+        width: 100%;
     }
     .footer .row-top .sns ul{
         width: 100%;

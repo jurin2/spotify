@@ -20,6 +20,30 @@
             display: block;
             font-size: 1.7em;
         }
+        .header nav ul li:nth-child(4){
+            margin-top: 60px;
+        }
+        .header nav ul li:nth-child(4)::before{
+            width: 20px;
+            height: 2px;
+            top: -50px;
+            margin: 21px 17px;
+        }
+        .header nav ul li:nth-child(4) a{
+            margin-left: 0;
+        }
+        .side-nav div[class="sidebar"] ul li{
+            padding: 5px 0;
+        }
+        .side-nav div[class="sidebar"] ul li a{
+            font-size: 1.4em;
+            font-weight: 500;
+        }
+        .side-nav div[class="sidebar"] ul li:nth-child(4) a,
+        .side-nav div[class="sidebar"] ul li:nth-child(5) a{
+            font-size: 1em;
+            font-weight: 400;
+        }
 
         /* section */
         .section .container{
@@ -69,6 +93,32 @@
             padding: 0 150px;
         }
     }
+
+    @media (max-width:768px) {
+        /* header */
+        .header .container{
+            padding: 19.5px 30px;
+        }
+        .header .side-nav input[id="menuicon"] + label{
+            right: 0;
+        }
+
+        /* section */
+        .section .container{
+            padding: 0 30px;
+        }
+
+        /* footer */
+        .footer .row-top{
+            padding: 0 30px;
+        }
+        .footer .row-center{
+            padding: 0 30px;
+        }
+        .footer .row-bottom{
+            padding: 0 30px;
+        }
+    }
     
 </style>
 </head>
@@ -89,7 +139,22 @@
                     </ul>
                 </nav>
                 <nav class="side-nav">
-                    <i class="fa-solid fa-bars"></i>
+                    <!-- <i class="fa-solid fa-bars"></i> -->
+                    <input type="checkbox" id="menuicon">
+                    <label for="menuicon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <div class="sidebar">
+                        <ul>
+                            <li><a href="#">프리미엄</a></li>
+                            <li><a href="#">지원</a></li>
+                            <li><a href="#">다운로드하기</a></li>
+                            <li><a href="#">가입하기</a></li>
+                            <li><a href="#">로그인하기</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </header>

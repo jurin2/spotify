@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    word-break: keep-all;
 }
 img{
     vertical-align: top;
@@ -79,6 +80,73 @@ ul,ol,li{
 }
 .header nav.side-nav{
     display: none;
+}
+
+/* sidebar */
+.side-nav input[id="menuicon"]{
+    display: none;
+}
+.side-nav input[id="menuicon"] + label{
+    display: block;
+    margin: 30px;
+    width: 40px;
+    height: 35px;
+    position: fixed;
+    right: 120px;
+    top: -7px;
+    transition: all .35s;
+    cursor: pointer;
+}
+.side-nav input[id="menuicon"] + label span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background-color: #fff;
+    transition: all .35s;
+}
+.side-nav input[id="menuicon"] + label span:nth-child(1){
+    top: 0;
+}
+.side-nav input[id="menuicon"] + label span:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%);
+}
+.side-nav input[id="menuicon"] + label span:nth-child(3){
+    bottom: 0;
+}
+.side-nav input[id="menuicon"]:checked + label{
+    z-index: 2;
+}
+.side-nav input[id="menuicon"]:checked + label span:nth-child(1){
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+.side-nav input[id="menuicon"]:checked + label span:nth-child(2){
+    opacity: 0;
+}
+.side-nav input[id="menuicon"]:checked + label span:nth-child(3){
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+.side-nav div[class="sidebar"]{
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    right: -50%;
+    z-index: 1;
+    transition: all .35s;
+}
+.side-nav div[class="sidebar"] ul{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.side-nav input[id="menuicon"]:checked + label + div{
+    right: 0;
 }
 
 

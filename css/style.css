@@ -77,13 +77,12 @@ ul,ol,li{
 .header nav ul li:nth-child(4) a{
     margin-left: 35px;
 }
+.header nav.side-nav{
+    display: none;
+}
 
 
 /* section */
-.section .container{
-    max-width: 1170px;
-    margin: 0 auto;
-}
 .section{
     background-color: #993399;
 }
@@ -92,6 +91,8 @@ ul,ol,li{
     flex-flow: row nowrap;
     flex-grow: 1;
     align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
     padding: 0 15px;
 }
 /* row-left */

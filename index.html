@@ -5,8 +5,70 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <title>Listening is everything - Spotify</title>
 <style>
+    @media (max-width:1024px) {
+        /* header */
+        .header nav{
+            display: none;
+        }
+        .header .container{
+            padding: 19.5px 150px;
+        }
+        .header nav.side-nav{
+            display: block;
+            font-size: 1.7em;
+        }
+
+        /* section */
+        .section .container{
+            flex-direction: column;
+            padding: 0 150px;
+        }
+        .section .row-left .title{
+            font-size: 55px;
+        }
+        .section .row-left .content{
+            font-size: 22px;
+        }
+        .section .row-left{
+            width: 90%;
+            margin-right: 0;
+            text-align: center;
+        }
+        .section .row-left .reference{
+           margin: 0 auto;
+        }
+        .section .row-right{
+            padding: 0 0 72px 0;
+        }
+
+        /* footer */
+        .footer .row-top{
+            flex-direction: column;
+            padding: 0 150px;
+        }
+        .footer .row-top h1{
+            padding: 0;
+            min-height: 60px;
+        }
+        .footer .row-top .com-conts{
+            width: 100%;
+        }
+        .footer .row-top .sns{
+            width: 100%;
+        }
+        .footer .row-top .sns ul{
+            margin: 120px 0 0 0;
+        }
+        .footer .row-center{
+            padding: 0 150px;
+        }
+        .footer .row-bottom{
+            padding: 0 150px;
+        }
+    }
     
 </style>
 </head>
@@ -25,6 +87,9 @@
                         <li><a href="#">가입하기</a></li>
                         <li><a href="#">로그인하기</a></li>
                     </ul>
+                </nav>
+                <nav class="side-nav">
+                    <i class="fa-solid fa-bars"></i>
                 </nav>
             </div>
         </header>
@@ -122,5 +187,6 @@
         </footer>
     </div>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
